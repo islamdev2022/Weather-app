@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchcon{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    height: 35px;
+    border-radius:50px ;
+    border: solid grey 1px;
+    position: relative;
+    left:3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+input:focus{
+outline: none;
+}
+input::placeholder{
+    padding-left: 10px;
+}
+button{
+border: transparent;
+background-color:white;
+}
+button:hover{
+    cursor: pointer;
+}
+#e404{
+    width: 200px;
+    display: table;
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right:auto ;
+}
+.imgcondition p{
+text-align: center;
+}
+#temp{
+    font-size: 50px;
+}
+.feels, p{
+    text-align: center;
+}
+hr{
+    width: 100%;
+}
+.hum,.wind,.cloud,.time{
+    display: grid;
+    place-items: center;
+}
+.cloud{
+    width: 35%;
+}
+.time{
+display: flex;
+gap: 10px;
+}
+.up,.down{
+    display:flex ;
+    gap: 10%;
+    justify-content: center;
+}
+.last{
+    margin-top: -5px;
+    margin-bottom: -10px;
+    font-size: 12px;
+}
+.container{
+    box-shadow: rgb(161, 161, 161) 0px 10px 40px 10px;
+    border-radius: 40px;
+    display:grid; 
+    padding: 20px;
+    height: 45px;
+    overflow: hidden;
+}

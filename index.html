@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1101ab7512.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="weather.js" defer></script>
+    <title>Weather App API</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="searchcon">
+            
+               <i class="fa-sharp fa-solid fa-location-dot fa-lg"></i>
+               <input type="text" id="search" placeholder="Search here ...">
+               <button type="submit" id="sub"><i class="fa-solid fa-magnifying-glass-location fa-xl"></i></button>
+           
+        </div>
+        <div class="imgcondition">
+              <img id="e404" src="images/404.png" alt="" >
+              <p class="oops">Oops! Invalid location</p>
+        </div>
+        <div class="temerature weather-details">
+            <span id="weath"></span>
+            <p ><span id="temp"></span>°C</p>
+            <!-- feels like too  -->
+            <div>
+             <p class="feels"><span id="min"></span> / <span id="max"></span> Feel like <span id="feels"></span></p>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="condition">
+            <div class="weather-details">
+                <div class="up">
+                   <div class="hum"> <i class="fa-solid fa-water"></i><p>Humidty <span id="hum"></span>%</p></div>
+                   <div class="wind"><i class="fa-solid fa-wind"></i><p>Wind <span id="wind"></span>M/s</p></div>
+                   <div class="cloud"><i class="fa-solid fa-cloud"></i><p>Clouds <span id="cloud"></span>%</p></div>
+                </div>
+                <div class="down">
+                   
+                   <div class="time"><i class="fa-solid fa-clock"></i><p>Sunrise <span id="timerise"></span></p><p>Sunset <span id="timeset"></span></p></div>
+                   
+                </div>
+                <p class="last">Last Update <span id="last"></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
