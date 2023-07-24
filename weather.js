@@ -8,6 +8,7 @@ image.style.display='none'
 const btn = document.getElementById('sub')
 
 btn.addEventListener('click',()=>{
+    oops.style.display='none'
     const city=document.getElementById('search').value
    const container=document.querySelector('.container')
     if(city==''){
